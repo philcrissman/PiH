@@ -54,3 +54,5 @@ xqsort (x:xs) = xqsort smaller ++ [x] ++ xqsort larger
                   larger = [b | b <- xs, b > x]
 
 testXqsort = xqsort [2,2,3,1,1] == [1,2,3] -- dups of x are skipped!
+
+
